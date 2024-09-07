@@ -5,6 +5,35 @@ from langchain_ollama.llms import OllamaLLM
 import json
 from data_helper import search 
 
+def parse_data(text):
+    # Split the text by newlines to get individual lines
+    lines = text.strip().split("\n")    
+    # Initialize variables to store values
+    parsed_data = {
+        "Category": "",
+        "Situation English": "",
+        "Situation Korean": "",
+        "Question English": "",
+        "Answer Korean": "",
+        "Answer English": "",
+    }
+
+    # Parse each line
+    for line in lines:
+        if ":" in line:
+            key, value = line.split(":", 1)  
+            key = key.strip().strip('"')
+            value = value.strip().strip('"')
+            print("key, value", key, value)
+            print(f"Parsed key: {repr(key)}")  # Debugging output
+
+            
+            # Assign to the appropriate variable based on the key
+            if key in parsed_data: 
+                parsed_data[key] = value                
+    return parsed_data
+
+##Please **strictly follow the format below**. 
 
 # Function to build a prompt for the LLM
 def build_prompt(query, search_results):
@@ -12,9 +41,10 @@ def build_prompt(query, search_results):
 You are an English teacher who is helping students learn English expressions. 
 Use only the facts from the CONTEXT to answer the QUESTION. Do not add any additional information.
 
-Please **strictly follow the format below**. Do not add any additional information or change the structure. **Use only the facts from the provided CONTEXT.** Your response must be in markdown format, with all sentences separated by a newline.
+Do not add any additional information or change the structure. **Use only the facts from the provided CONTEXT.** Your response must be in markdown format, with all sentences separated by a newline.
 Follow the below examples.font_size should be **12px**
 
+pleaes refer to the example below and write it in JSON format. 
 Example 1
 ```
   "Question English":  "Where is the nearest subway station?",
@@ -29,7 +59,7 @@ Example 2
   "Situation English": "You are at a restaurant and want to know if they offer outdoor seating.",
   "Situation Korean": "당신은 식당에 있으며 야외 좌석이 있는지 알고 싶습니다.",
   "Answer English": "Yes, we have a patio for outdoor dining.",
-  "Answer Korean": "야외에서 식사할 수 있는 테라스가 있습니다.."
+  "Answer Korean": "야외에서 식사할 수 있는 테라스가 있습니다."
 ```
 
 ### Instructions:
@@ -115,7 +145,7 @@ def rag(query, type):
     print("[rag answer - prompt", prompt)
     print("[rag answer done]----------")
     prompt_template = ChatPromptTemplate.from_template(prompt)
-    model = OllamaLLM(model="llama3.1")
+    model = OllamaLLM(model="llama3.1", temperature = 0.1)
     answer = model.invoke(prompt)
     print("final answer", answer)
     return answer

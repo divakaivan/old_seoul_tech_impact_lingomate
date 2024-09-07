@@ -2,7 +2,7 @@ import streamlit as st
 from elasticsearch import Elasticsearch
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
-from prompt import build_prompt, recommend_prompt
+from prompt import build_prompt, recommend_prompt, parse_data
 from data_helper import search 
 import json
 
@@ -34,8 +34,12 @@ selected_option = st.selectbox("please select an option", entry_options)
 def wrap_to_json(answer_text): 
     print("answer_text", answer_text)
     lines = answer_text.replace("###", "").strip()
-    print(lines)
-    return lines
+    parsed_data = parse_data(lines)
+    # for key, value in parsed_data.items(): 
+    #     print(f"{key.capitalize()}: {value}")
+
+    # print("lines", lines)
+    return parsed_data
     # json_data = {}
 
     # for line in lines: 
@@ -52,61 +56,59 @@ def ask_LLM():
             with st.spinner("Searching..."):
                 answer = rag(user_query, "question")
                 print("ollama answer: ", answer)    
-                json_output = wrap_to_json(answer)
-                print("json_output", json_output)
-                data = json.loads(str(answer))
+                parsed_data = wrap_to_json(answer)
+                print("parsed_data", parsed_data)
+
+                #data = json.loads(str(answer))
                 # 필드 추출 및 f-string을 사용한 문자열 출력
-                question_english = data["Question English"]
-                situation_english = data["Situation English"]
-                situation_korean = data["Situation Korean"]
-                answer_english = data["Answer English"]
-                answer_korean = data["Answer Korean"]
+                question_english = parsed_data["Question English"]
+                situation_english = parsed_data["Situation English"]
+                situation_korean = parsed_data["Situation Korean"]
+                answer_english = parsed_data["Answer English"]
+                answer_korean = parsed_data["Answer Korean"]
 
                 # f-string을 사용하여 출력
                 formatted_output = f"""
-                Question English: {question_english}
-                Situation English: {situation_english}
-                Situation Korean: {situation_korean}
-                Answer English: {answer_english}
-                Answer Korean: {answer_korean}"""
+                Question English: {question_english}\n
+                Situation English: {situation_english}\n
+                Situation Korean: {situation_korean}\n
+                Answer English: {answer_english}\n
+                Answer Korean: {answer_korean}\n"""
 
                 # 출력 
-                print(formatted_output)     
+                print("formatted", formatted_output)     
 
                 st.success("Query Completed!")
-                st.markdown(answer)
+                st.markdown(formatted_output)
         else:
             st.warning("Please enter a query.")
 
 
 
 def suggest_categories(): 
-    print("not it's going to suggest_categories") 
+    print("Will suggest_categories") 
     st.subheader("Pick one category")
     category_options = ["choose a category you are interested in", "Gym", "Museum", "Restaurant", "Shopping", "Travel"]
     selected_category = st.selectbox("choose a category you are interested in", category_options)
-    st.write("You selected:", selected_category)
-    if selected_category: 
+    if selected_category!= "choose a category you are interested in":
+        st.write("You selected:", selected_category) 
         with st.spinner("Searching..."):
-            answer = rag(selected_category, "category")
-            clean_answer = answer.replace("###", "").strip()
+            answer = rag(selected_category, "category").replace("###", "").strip()
             st.success("Query Completed!")
-            styled_answer = f'<p style="font-size:10px;">{answer}</p>'
-            st.markdown(styled_answer, unsafe_allow_html=True)
+            st.markdown(answer, unsafe_allow_html=True)
     else: 
         st.warning("Please select a category.")
 
 
 if selected_option:
     if selected_option == "pick a category you are interested in":
-        print("it goes to the", selected_option)
         suggest_categories()
     else: 
         print("selected_option", selected_option)
         ask_LLM()
 
 else: 
-    st.warning("Please select an option.")
+    st.subheader("Please select an option.")
 # Display the selected option
 
 
