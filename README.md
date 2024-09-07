@@ -1,5 +1,5 @@
 Start ElasticSearch
 
 ```bash
-docker compose -it up --build 
+docker-compose up --build -d
 ```
