@@ -1,2 +1,7 @@
 elasticsearch
 openai
+streamlit
+langchain-ollama
+langchain-core
+streamlit-authenticator
+psycopg2-binary
