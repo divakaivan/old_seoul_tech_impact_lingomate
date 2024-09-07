@@ -1,0 +1,1163 @@
+[
+    {
+        "category": "Restaurant",
+        "situation_en": "You are at a restaurant and your food is taking too long.",
+        "situation_kr": "당신은 식당에 있는데 음식이 너무 오래 걸리고 있습니다.",
+        "question_en": "Why is my food taking so long?",
+        "question_kr": "내 음식이 왜 이렇게 오래 걸리나요?",
+        "answer_en": "The kitchen is busy, but your food will be ready soon.",
+        "answer_kr": "주방이 바쁘지만, 곧 음식이 준비될 것입니다."
+    },
+    {
+        "category": "Directions",
+        "situation_en": "You are lost in a new city and need directions.",
+        "situation_kr": "당신은 새로운 도시에서 길을 잃었고 길 안내가 필요합니다.",
+        "question_en": "How do I get to the nearest subway station?",
+        "question_kr": "가장 가까운 지하철역으로 어떻게 가나요?",
+        "answer_en": "Turn left at the next intersection and walk two blocks.",
+        "answer_kr": "다음 교차로에서 좌회전하고 두 블록을 걸으세요."
+    },
+    {
+        "category": "Hotel",
+        "situation_en": "You are at a hotel and need extra towels.",
+        "situation_kr": "당신은 호텔에 있으며 추가 수건이 필요합니다.",
+        "question_en": "Can I have extra towels, please?",
+        "question_kr": "추가 수건을 받을 수 있나요?",
+        "answer_en": "Sure, we will send some to your room right away.",
+        "answer_kr": "물론이죠, 곧 객실로 보내드리겠습니다."
+    },
+    {
+        "category": "Transportation",
+        "situation_en": "You missed your train and need to find the next one.",
+        "situation_kr": "당신은 기차를 놓쳤고 다음 기차를 찾아야 합니다.",
+        "question_en": "When is the next train to London?",
+        "question_kr": "다음 런던행 기차는 언제 있나요?",
+        "answer_en": "The next train to London is at 3:45 PM.",
+        "answer_kr": "다음 런던행 기차는 오후 3시 45분입니다."
+    },
+    {
+        "category": "Shopping",
+        "situation_en": "You are shopping and want to know if an item is on sale.",
+        "situation_kr": "당신은 쇼핑 중이며 물건이 세일 중인지 알고 싶습니다.",
+        "question_en": "Is this item on sale?",
+        "question_kr": "이 물건은 세일 중인가요?",
+        "answer_en": "Yes, it's 20% off today.",
+        "answer_kr": "네, 오늘 20% 할인 중입니다."
+    },
+    {
+        "category": "Museum",
+        "situation_en": "You are at a museum and want more information about an exhibit.",
+        "situation_kr": "당신은 박물관에 있으며 전시물에 대한 추가 정보를 원합니다.",
+        "question_en": "Can you tell me more about this exhibit?",
+        "question_kr": "이 전시물에 대해 더 자세히 설명해 주시겠어요?",
+        "answer_en": "This exhibit focuses on ancient Egyptian artifacts.",
+        "answer_kr": "이 전시물은 고대 이집트 유물을 다루고 있습니다."
+    },
+    {
+        "category": "Flight",
+        "situation_en": "You are trying to book a flight and need to know the baggage policy.",
+        "situation_kr": "당신은 항공편을 예약하려고 하며 수하물 정책을 알고 싶습니다.",
+        "question_en": "What is the baggage policy for this airline?",
+        "question_kr": "이 항공사의 수하물 정책은 무엇인가요?",
+        "answer_en": "You can check in one bag for free and carry on one personal item.",
+        "answer_kr": "수하물 하나는 무료로 체크인할 수 있으며, 개인 소지품 하나는 기내 반입 가능합니다."
+    },
+    {
+        "category": "Parks",
+        "situation_en": "You are at a park and want to know if dogs are allowed.",
+        "situation_kr": "당신은 공원에 있으며 반려견 출입이 가능한지 알고 싶습니다.",
+        "question_en": "Are dogs allowed in this park?",
+        "question_kr": "이 공원에 반려견 출입이 허용되나요?",
+        "answer_en": "Yes, but they must be on a leash at all times.",
+        "answer_kr": "네, 하지만 항상 목줄을 착용해야 합니다."
+    },
+    {
+        "category": "Supermarket",
+        "situation_en": "You are at a supermarket and want to know if a product is in stock.",
+        "situation_kr": "당신은 슈퍼마켓에 있으며 상품이 재고 있는지 알고 싶습니다.",
+        "question_en": "Do you have this product in stock?",
+        "question_kr": "이 상품이 재고에 있나요?",
+        "answer_en": "Sorry, we're out of stock at the moment, but we expect more next week.",
+        "answer_kr": "죄송합니다, 현재 재고가 없지만 다음 주에 다시 입고될 예정입니다."
+    },
+    {
+        "category": "Movie Theater",
+        "situation_en": "You are at a movie theater and want to know the next showtime.",
+        "situation_kr": "당신은 영화관에 있으며 다음 상영 시간을 알고 싶습니다.",
+        "question_en": "When is the next showtime for this movie?",
+        "question_kr": "이 영화의 다음 상영 시간은 언제인가요?",
+        "answer_en": "The next showtime is at 7:30 PM.",
+        "answer_kr": "다음 상영 시간은 오후 7시 30분입니다."
+    },
+    {
+        "category": "Library",
+        "situation_en": "You are at a library and need help finding a book.",
+        "situation_kr": "당신은 도서관에 있으며 책을 찾는 데 도움이 필요합니다.",
+        "question_en": "Can you help me find this book?",
+        "question_kr": "이 책을 찾는 데 도와주시겠어요?",
+        "answer_en": "Sure, it's located in the fiction section on the second floor.",
+        "answer_kr": "물론이죠, 이 책은 2층 소설 코너에 있습니다."
+    },
+    {
+        "category": "Cafe",
+        "situation_en": "You are at a cafe and want to know if they have free Wi-Fi.",
+        "situation_kr": "당신은 카페에 있으며 무료 와이파이가 있는지 알고 싶습니다.",
+        "question_en": "Do you have free Wi-Fi here?",
+        "question_kr": "여기 무료 와이파이가 있나요?",
+        "answer_en": "Yes, the password is on your receipt.",
+        "answer_kr": "네, 비밀번호는 영수증에 적혀 있습니다."
+    },
+    {
+        "category": "Clothing Store",
+        "situation_en": "You are at a clothing store and want to know if they offer a student discount.",
+        "situation_kr": "당신은 의류 매장에 있으며 학생 할인이 있는지 알고 싶습니다.",
+        "question_en": "Do you offer a student discount?",
+        "question_kr": "학생 할인이 있나요?",
+        "answer_en": "Yes, we offer a 10% discount with a valid student ID.",
+        "answer_kr": "네, 유효한 학생증을 제시하면 10% 할인이 가능합니다."
+    },
+    {
+        "category": "Gas Station",
+        "situation_en": "You are at a gas station and want to know if they accept credit cards.",
+        "situation_kr": "당신은 주유소에 있으며 신용카드 사용이 가능한지 알고 싶습니다.",
+        "question_en": "Do you accept credit cards here?",
+        "question_kr": "여기서 신용카드를 받나요?",
+        "answer_en": "Yes, we accept all major credit cards.",
+        "answer_kr": "네, 주요 신용카드 모두 사용 가능합니다."
+    },
+    {
+        "category": "Pharmacy",
+        "situation_en": "You are at a pharmacy and want to know if they have a specific medication.",
+        "situation_kr": "당신은 약국에 있으며 특정 약품이 있는지 알고 싶습니다.",
+        "question_en": "Do you have this medication in stock?",
+        "question_kr": "이 약이 재고에 있나요?",
+        "answer_en": "Yes, we have it in stock. Would you like to pick it up now?",
+        "answer_kr": "네, 재고에 있습니다. 지금 가져가시겠어요?"
+    },
+    {
+        "category": "Gym",
+        "situation_en": "You are at a gym and want to know if they offer personal training.",
+        "situation_kr": "당신은 체육관에 있으며 개인 트레이닝이 있는지 알고 싶습니다.",
+        "question_en": "Do you offer personal training sessions?",
+        "question_kr": "개인 트레이닝 세션이 있나요?",
+        "answer_en": "Yes, we have certified trainers available for one-on-one sessions.",
+        "answer_kr": "네, 1대1 세션을 위한 인증된 트레이너가 있습니다."
+    },
+    {
+        "category": "Bank",
+        "situation_en": "You are at a bank and want to know the current interest rate for savings accounts.",
+        "situation_kr": "당신은 은행에 있으며 저축 계좌의 현재 이자율을 알고 싶습니다.",
+        "question_en": "What is the current interest rate for savings accounts?",
+        "question_kr": "저축 계좌의 현재 이자율은 얼마인가요?",
+        "answer_en": "The current interest rate is 1.5% per year.",
+        "answer_kr": "현재 이자율은 연 1.5%입니다."
+    },
+    {
+        "category": "Hardware Store",
+        "situation_en": "You are at a hardware store and want to know if they offer delivery services.",
+        "situation_kr": "당신은 철물점에 있으며 배달 서비스가 있는지 알고 싶습니다.",
+        "question_en": "Do you offer delivery services?",
+        "question_kr": "배달 서비스가 있나요?",
+        "answer_en": "Yes, we can deliver your items within 48 hours.",
+        "answer_kr": "네, 48시간 이내에 물품을 배달해 드립니다."
+    },
+    {
+        "category": "Tourist Information",
+        "situation_en": "You are at a tourist information center and want to know about local attractions.",
+        "situation_kr": "당신은 관광 안내소에 있으며 지역 명소에 대해 알고 싶습니다.",
+        "question_en": "Can you recommend any local attractions?",
+        "question_kr": "지역 명소를 추천해 주시겠어요?",
+        "answer_en": "The nearby botanical gardens and historic district are very popular.",
+        "answer_kr": "근처 식물원과 역사 지구가 매우 인기가 많습니다."
+    },
+    {
+        "category": "Bookstore",
+        "situation_en": "You are at a bookstore and want to know if they can order a book for you.",
+        "situation_kr": "당신은 서점에 있으며 책을 주문할 수 있는지 알고 싶습니다.",
+        "question_en": "Can you order this book for me?",
+        "question_kr": "이 책을 주문해 주시겠어요?",
+        "answer_en": "Yes, we can order it and it should arrive within a week.",
+        "answer_kr": "네, 주문할 수 있으며 일주일 내로 도착할 예정입니다."
+    },
+    {
+        "category": "Hotel",
+        "situation_en": "You are at a hotel and want to request a late check-out.",
+        "situation_kr": "당신은 호텔에 있으며 늦은 체크아웃을 요청하고 싶습니다.",
+        "question_en": "Can I request a late check-out?",
+        "question_kr": "늦은 체크아웃을 요청할 수 있나요?",
+        "answer_en": "Yes, we can extend your check-out time to 2:00 PM.",
+        "answer_kr": "네, 체크아웃 시간을 오후 2시까지 연장해 드리겠습니다."
+    },
+    {
+        "category": "Conference",
+        "situation_en": "You are at a conference and want to know the Wi-Fi password.",
+        "situation_kr": "당신은 회의에 있으며 와이파이 비밀번호를 알고 싶습니다.",
+        "question_en": "What is the Wi-Fi password for this conference?",
+        "question_kr": "이 회의의 와이파이 비밀번호는 무엇인가요?",
+        "answer_en": "The Wi-Fi password is included in your welcome packet.",
+        "answer_kr": "와이파이 비밀번호는 환영 패킷에 포함되어 있습니다."
+    },
+    {
+        "category": "Car Rental",
+        "situation_en": "You are at a car rental office and want to know about insurance options.",
+        "situation_kr": "당신은 렌터카 사무실에 있으며 보험 옵션에 대해 알고 싶습니다.",
+        "question_en": "What insurance options are available for this rental?",
+        "question_kr": "이 렌트카에 대한 보험 옵션은 무엇인가요?",
+        "answer_en": "We offer basic and comprehensive insurance coverage.",
+        "answer_kr": "기본 및 종합 보험 커버리지를 제공합니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at an airport and want to know if your flight is on time.",
+        "situation_kr": "당신은 공항에 있으며 비행기가 제시간에 출발하는지 알고 싶습니다.",
+        "question_en": "Is my flight on time?",
+        "question_kr": "내 비행기가 제시간에 출발하나요?",
+        "answer_en": "Yes, your flight is on schedule.",
+        "answer_kr": "네, 당신의 비행기는 예정대로 출발합니다."
+    },
+    {
+        "category": "Post Office",
+        "situation_en": "You are at a post office and want to know how much it costs to send a package.",
+        "situation_kr": "당신은 우체국에 있으며 소포 발송 비용을 알고 싶습니다.",
+        "question_en": "How much does it cost to send a package?",
+        "question_kr": "소포 발송 비용은 얼마인가요?",
+        "answer_en": "It depends on the size and destination of the package.",
+        "answer_kr": "소포의 크기와 목적지에 따라 다릅니다."
+    },
+    {
+        "category": "Restaurant",
+        "situation_en": "You are at a restaurant and the menu is in a foreign language.",
+        "situation_kr": "당신은 식당에 있으며 메뉴가 외국어로 되어 있습니다.",
+        "question_en": "Can you help me translate the menu?",
+        "question_kr": "메뉴 번역을 도와주실 수 있나요?",
+        "answer_en": "Sure, I can explain the dishes for you.",
+        "answer_kr": "물론이죠, 제가 요리를 설명해 드리겠습니다."
+    },
+    {
+        "category": "Directions",
+        "situation_en": "You are at a gas station and need directions to the nearest highway.",
+        "situation_kr": "당신은 주유소에 있으며 가장 가까운 고속도로 방향을 알고 싶습니다.",
+        "question_en": "How do I get to the nearest highway?",
+        "question_kr": "가장 가까운 고속도로로 어떻게 가나요?",
+        "answer_en": "Take the next right and follow the signs for the highway.",
+        "answer_kr": "다음 오른쪽에서 회전하고 고속도로 표지판을 따라가세요."
+    },
+    {
+        "category": "Hotel",
+        "situation_en": "You are at a hotel and want to know the check-in time.",
+        "situation_kr": "당신은 호텔에 있으며 체크인 시간을 알고 싶습니다.",
+        "question_en": "What time is check-in?",
+        "question_kr": "체크인 시간은 언제인가요?",
+        "answer_en": "Check-in starts at 3:00 PM.",
+        "answer_kr": "체크인은 오후 3시부터 가능합니다."
+    },
+    {
+        "category": "Transportation",
+        "situation_en": "You are at a bus stop and want to know when the next bus arrives.",
+        "situation_kr": "당신은 버스 정류장에 있으며 다음 버스 도착 시간을 알고 싶습니다.",
+        "question_en": "When does the next bus arrive?",
+        "question_kr": "다음 버스는 언제 도착하나요?",
+        "answer_en": "The next bus arrives in 10 minutes.",
+        "answer_kr": "다음 버스는 10분 후에 도착합니다."
+    },
+    {
+        "category": "Shopping",
+        "situation_en": "You are in a clothing store and want to know if they have a different size.",
+        "situation_kr": "당신은 의류 매장에 있으며 다른 사이즈가 있는지 알고 싶습니다.",
+        "question_en": "Do you have this in a different size?",
+        "question_kr": "이것의 다른 사이즈가 있나요?",
+        "answer_en": "Let me check in the back for you.",
+        "answer_kr": "뒤에서 확인해 보겠습니다."
+    },
+    {
+        "category": "Museum",
+        "situation_en": "You are at an art museum and want to know if photography is allowed.",
+        "situation_kr": "당신은 미술관에 있으며 사진 촬영이 가능한지 알고 싶습니다.",
+        "question_en": "Is photography allowed in this museum?",
+        "question_kr": "이 박물관에서 사진 촬영이 가능한가요?",
+        "answer_en": "No, photography is not permitted in the galleries.",
+        "answer_kr": "아니요, 갤러리에서는 사진 촬영이 금지되어 있습니다."
+    },
+    {
+        "category": "Flight",
+        "situation_en": "You are at an airport and want to know the weight limit for checked luggage.",
+        "situation_kr": "당신은 공항에 있으며 위탁 수하물의 무게 제한을 알고 싶습니다.",
+        "question_en": "What is the weight limit for checked luggage?",
+        "question_kr": "위탁 수하물의 무게 제한은 얼마인가요?",
+        "answer_en": "The limit is 23 kilograms per bag.",
+        "answer_kr": "가방당 23킬로그램이 제한입니다."
+    },
+    {
+        "category": "Parks",
+        "situation_en": "You are at a park and want to know if there are picnic tables.",
+        "situation_kr": "당신은 공원에 있으며 피크닉 테이블이 있는지 알고 싶습니다.",
+        "question_en": "Are there picnic tables in this park?",
+        "question_kr": "이 공원에 피크닉 테이블이 있나요?",
+        "answer_en": "Yes, there are several near the main entrance.",
+        "answer_kr": "네, 주 입구 근처에 여러 개가 있습니다."
+    },
+    {
+        "category": "Supermarket",
+        "situation_en": "You are at a supermarket and want to know if they sell organic products.",
+        "situation_kr": "당신은 슈퍼마켓에 있으며 유기농 제품이 있는지 알고 싶습니다.",
+        "question_en": "Do you sell organic products here?",
+        "question_kr": "여기 유기농 제품을 판매하나요?",
+        "answer_en": "Yes, we have a section dedicated to organic products.",
+        "answer_kr": "네, 유기농 제품 전용 코너가 있습니다."
+    },
+    {
+        "category": "Movie Theater",
+        "situation_en": "You are at a movie theater and want to know if there are any 3D showings.",
+        "situation_kr": "당신은 영화관에 있으며 3D 상영이 있는지 알고 싶습니다.",
+        "question_en": "Do you have any 3D showings for this movie?",
+        "question_kr": "이 영화에 3D 상영이 있나요?",
+        "answer_en": "Yes, the 3D showtime is at 8:00 PM.",
+        "answer_kr": "네, 3D 상영은 오후 8시에 있습니다."
+    },
+    {
+        "category": "Library",
+        "situation_en": "You are at a library and want to know if they have e-books available.",
+        "situation_kr": "당신은 도서관에 있으며 전자책이 있는지 알고 싶습니다.",
+        "question_en": "Do you offer e-books at this library?",
+        "question_kr": "이 도서관에서 전자책을 제공하나요?",
+        "answer_en": "Yes, you can access e-books through our online portal.",
+        "answer_kr": "네, 온라인 포털을 통해 전자책을 이용할 수 있습니다."
+    },
+    {
+        "category": "Cafe",
+        "situation_en": "You are at a cafe and want to know if they have soy milk.",
+        "situation_kr": "당신은 카페에 있으며 두유가 있는지 알고 싶습니다.",
+        "question_en": "Do you have soy milk?",
+        "question_kr": "두유가 있나요?",
+        "answer_en": "Yes, we have soy and almond milk options.",
+        "answer_kr": "네, 두유와 아몬드 밀크 옵션이 있습니다."
+    },
+    {
+        "category": "Clothing Store",
+        "situation_en": "You are in a clothing store and want to know if they offer free alterations.",
+        "situation_kr": "당신은 의류 매장에 있으며 무료 수선이 가능한지 알고 싶습니다.",
+        "question_en": "Do you offer free alterations?",
+        "question_kr": "무료 수선 서비스를 제공하나요?",
+        "answer_en": "Yes, we offer free alterations on full-priced items.",
+        "answer_kr": "네, 정가 상품에 한해 무료 수선이 가능합니다."
+    },
+    {
+        "category": "Gas Station",
+        "situation_en": "You are at a gas station and want to know if they have air for tires.",
+        "situation_kr": "당신은 주유소에 있으며 타이어 공기가 있는지 알고 싶습니다.",
+        "question_en": "Do you have air for tires here?",
+        "question_kr": "여기서 타이어 공기를 넣을 수 있나요?",
+        "answer_en": "Yes, the air pump is located near the exit.",
+        "answer_kr": "네, 공기 펌프는 출구 근처에 있습니다."
+    },
+    {
+        "category": "Pharmacy",
+        "situation_en": "You are at a pharmacy and want to know if they carry over-the-counter pain relievers.",
+        "situation_kr": "당신은 약국에 있으며 일반 진통제를 판매하는지 알고 싶습니다.",
+        "question_en": "Do you sell over-the-counter pain relievers?",
+        "question_kr": "일반 진통제를 판매하나요?",
+        "answer_en": "Yes, they are in aisle 4.",
+        "answer_kr": "네, 4번 통로에 있습니다."
+    },
+    {
+        "category": "Gym",
+        "situation_en": "You are at a gym and want to know the cost of a membership.",
+        "situation_kr": "당신은 체육관에 있으며 멤버십 비용을 알고 싶습니다.",
+        "question_en": "How much is a gym membership?",
+        "question_kr": "체육관 멤버십은 얼마인가요?",
+        "answer_en": "A monthly membership is $50, and we offer discounts for annual plans.",
+        "answer_kr": "월 멤버십은 50달러이며, 연간 플랜에는 할인이 적용됩니다."
+    },
+    {
+        "category": "Bank",
+        "situation_en": "You are at a bank and want to know how to open a checking account.",
+        "situation_kr": "당신은 은행에 있으며 당좌 계좌를 개설하는 방법을 알고 싶습니다.",
+        "question_en": "How do I open a checking account?",
+        "question_kr": "당좌 계좌를 어떻게 개설하나요?",
+        "answer_en": "You need to provide identification and a minimum deposit of $100.",
+        "answer_kr": "신분증과 최소 100달러의 예치금이 필요합니다."
+    },
+    {
+        "category": "Hardware Store",
+        "situation_en": "You are at a hardware store and want to know if they cut keys.",
+        "situation_kr": "당신은 철물점에 있으며 열쇠를 복사할 수 있는지 알고 싶습니다.",
+        "question_en": "Do you cut keys here?",
+        "question_kr": "여기서 열쇠 복사를 하나요?",
+        "answer_en": "Yes, we offer key cutting services in the back.",
+        "answer_kr": "네, 뒤쪽에서 열쇠 복사 서비스를 제공합니다."
+    },
+    {
+        "category": "Tourist Information",
+        "situation_en": "You are at a tourist information center and want to know if there are city tours available.",
+        "situation_kr": "당신은 관광 안내소에 있으며 시티 투어가 있는지 알고 싶습니다.",
+        "question_en": "Are there city tours available?",
+        "question_kr": "시티 투어가 있나요?",
+        "answer_en": "Yes, there are guided tours every day at 10 AM and 2 PM.",
+        "answer_kr": "네, 매일 오전 10시와 오후 2시에 가이드 투어가 있습니다."
+    },
+    {
+        "category": "Bookstore",
+        "situation_en": "You are at a bookstore and want to know if they sell notebooks.",
+        "situation_kr": "당신은 서점에 있으며 노트북을 판매하는지 알고 싶습니다.",
+        "question_en": "Do you sell notebooks here?",
+        "question_kr": "여기서 노트북을 판매하나요?",
+        "answer_en": "Yes, we have a stationery section near the entrance.",
+        "answer_kr": "네, 입구 근처에 문구류 코너가 있습니다."
+    },
+    {
+        "category": "Hotel",
+        "situation_en": "You are at a hotel and want to know if they have room service.",
+        "situation_kr": "당신은 호텔에 있으며 룸서비스가 있는지 알고 싶습니다.",
+        "question_en": "Do you offer room service?",
+        "question_kr": "룸서비스가 있나요?",
+        "answer_en": "Yes, room service is available 24 hours a day.",
+        "answer_kr": "네, 룸서비스는 24시간 제공됩니다."
+    },
+    {
+        "category": "Conference",
+        "situation_en": "You are at a conference and want to know where the registration desk is.",
+        "situation_kr": "당신은 회의에 있으며 등록 데스크가 어디에 있는지 알고 싶습니다.",
+        "question_en": "Where is the registration desk?",
+        "question_kr": "등록 데스크는 어디에 있나요?",
+        "answer_en": "The registration desk is in the main lobby.",
+        "answer_kr": "등록 데스크는 메인 로비에 있습니다."
+    },
+    {
+        "category": "Car Rental",
+        "situation_en": "You are at a car rental office and want to know if they offer GPS systems with rentals.",
+        "situation_kr": "당신은 렌터카 사무실에 있으며 GPS 시스템이 렌터카에 포함되는지 알고 싶습니다.",
+        "question_en": "Do you offer GPS with the rental cars?",
+        "question_kr": "렌터카에 GPS가 포함되나요?",
+        "answer_en": "Yes, GPS systems are available for an additional fee.",
+        "answer_kr": "네, GPS 시스템은 추가 요금으로 이용 가능합니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at an airport and want to know if there is free Wi-Fi.",
+        "situation_kr": "당신은 공항에 있으며 무료 와이파이가 있는지 알고 싶습니다.",
+        "question_en": "Is there free Wi-Fi at this airport?",
+        "question_kr": "이 공항에 무료 와이파이가 있나요?",
+        "answer_en": "Yes, free Wi-Fi is available throughout the terminal.",
+        "answer_kr": "네, 터미널 전역에서 무료 와이파이를 이용할 수 있습니다."
+    },
+    {
+        "category": "Post Office",
+        "situation_en": "You are at a post office and want to know if they sell postage stamps.",
+        "situation_kr": "당신은 우체국에 있으며 우표를 판매하는지 알고 싶습니다.",
+        "question_en": "Do you sell postage stamps?",
+        "question_kr": "우표를 판매하나요?",
+        "answer_en": "Yes, we sell stamps at the counter and in vending machines.",
+        "answer_kr": "네, 카운터와 자동판매기에서 우표를 판매합니다."
+    },
+    {
+        "category": "Restaurant",
+        "situation_en": "You are at a restaurant and want to know if they offer outdoor seating.",
+        "situation_kr": "당신은 식당에 있으며 야외 좌석이 있는지 알고 싶습니다.",
+        "question_en": "Do you have outdoor seating?",
+        "question_kr": "야외 좌석이 있나요?",
+        "answer_en": "Yes, we have a patio for outdoor dining.",
+        "answer_kr": "네, 야외에서 식사할 수 있는 테라스가 있습니다."
+    },
+    {
+        "category": "Directions",
+        "situation_en": "You are at a train station and want to know which platform your train departs from.",
+        "situation_kr": "당신은 기차역에 있으며 기차가 출발하는 플랫폼을 알고 싶습니다.",
+        "question_en": "Which platform does my train leave from?",
+        "question_kr": "내 기차는 어느 플랫폼에서 출발하나요?",
+        "answer_en": "Your train departs from platform 3.",
+        "answer_kr": "기차는 3번 플랫폼에서 출발합니다."
+    },
+    {
+        "category": "Hotel",
+        "situation_en": "You are at a hotel and want to know if they have a swimming pool.",
+        "situation_kr": "당신은 호텔에 있으며 수영장이 있는지 알고 싶습니다.",
+        "question_en": "Is there a swimming pool in the hotel?",
+        "question_kr": "호텔에 수영장이 있나요?",
+        "answer_en": "Yes, the pool is located on the rooftop.",
+        "answer_kr": "네, 수영장은 옥상에 있습니다."
+    },
+    {
+        "category": "Transportation",
+        "situation_en": "You are at a bus station and want to know if the buses run late at night.",
+        "situation_kr": "당신은 버스 정류장에 있으며 늦은 밤에도 버스가 운행되는지 알고 싶습니다.",
+        "question_en": "Do the buses run late at night?",
+        "question_kr": "버스는 늦은 밤에도 운행하나요?",
+        "answer_en": "Yes, the buses run until midnight.",
+        "answer_kr": "네, 버스는 자정까지 운행됩니다."
+    },
+    {
+        "category": "Shopping",
+        "situation_en": "You are at a mall and want to know if they offer valet parking.",
+        "situation_kr": "당신은 쇼핑몰에 있으며 발렛 파킹을 제공하는지 알고 싶습니다.",
+        "question_en": "Do you offer valet parking?",
+        "question_kr": "발렛 파킹 서비스를 제공하나요?",
+        "answer_en": "Yes, valet parking is available at the main entrance.",
+        "answer_kr": "네, 발렛 파킹은 주 입구에서 이용 가능합니다."
+    },
+    {
+        "category": "Museum",
+        "situation_en": "You are at a history museum and want to know if they offer audio guides.",
+        "situation_kr": "당신은 역사 박물관에 있으며 오디오 가이드를 제공하는지 알고 싶습니다.",
+        "question_en": "Do you have audio guides?",
+        "question_kr": "오디오 가이드를 제공하나요?",
+        "answer_en": "Yes, audio guides are available in several languages.",
+        "answer_kr": "네, 여러 언어로 된 오디오 가이드를 제공합니다."
+    },
+    {
+        "category": "Flight",
+        "situation_en": "You are at an airport and want to know if they offer in-flight meals.",
+        "situation_kr": "당신은 공항에 있으며 기내식이 제공되는지 알고 싶습니다.",
+        "question_en": "Are there in-flight meals?",
+        "question_kr": "기내식이 제공되나요?",
+        "answer_en": "Yes, complimentary meals are served on long-haul flights.",
+        "answer_kr": "네, 장거리 항공편에서는 기내식이 무료로 제공됩니다."
+    },
+    {
+        "category": "Parks",
+        "situation_en": "You are at a park and want to know if there are hiking trails.",
+        "situation_kr": "당신은 공원에 있으며 하이킹 코스가 있는지 알고 싶습니다.",
+        "question_en": "Are there hiking trails here?",
+        "question_kr": "여기 하이킹 코스가 있나요?",
+        "answer_en": "Yes, there are several trails marked on the park map.",
+        "answer_kr": "네, 공원 지도에 표시된 여러 하이킹 코스가 있습니다."
+    },
+    {
+        "category": "Supermarket",
+        "situation_en": "You are at a supermarket and want to know if they accept digital payments.",
+        "situation_kr": "당신은 슈퍼마켓에 있으며 디지털 결제가 가능한지 알고 싶습니다.",
+        "question_en": "Do you accept digital payments?",
+        "question_kr": "디지털 결제가 가능한가요?",
+        "answer_en": "Yes, we accept Apple Pay and Google Pay.",
+        "answer_kr": "네, 애플 페이와 구글 페이를 받습니다."
+    },
+    {
+        "category": "Movie Theater",
+        "situation_en": "You are at a movie theater and want to know if they sell popcorn.",
+        "situation_kr": "당신은 영화관에 있으며 팝콘을 판매하는지 알고 싶습니다.",
+        "question_en": "Do you sell popcorn here?",
+        "question_kr": "여기에서 팝콘을 판매하나요?",
+        "answer_en": "Yes, we have a concession stand with popcorn, drinks, and candy.",
+        "answer_kr": "네, 팝콘, 음료수, 캔디를 파는 매점이 있습니다."
+    },
+    {
+        "category": "Library",
+        "situation_en": "You are at a library and want to know if they have quiet study rooms.",
+        "situation_kr": "당신은 도서관에 있으며 조용한 공부방이 있는지 알고 싶습니다.",
+        "question_en": "Do you have quiet study rooms?",
+        "question_kr": "조용한 공부방이 있나요?",
+        "answer_en": "Yes, you can reserve a study room at the front desk.",
+        "answer_kr": "네, 프론트 데스크에서 공부방을 예약할 수 있습니다."
+    },
+    {
+        "category": "Cafe",
+        "situation_en": "You are at a cafe and want to know if they offer refills on coffee.",
+        "situation_kr": "당신은 카페에 있으며 커피 리필이 가능한지 알고 싶습니다.",
+        "question_en": "Do you offer free coffee refills?",
+        "question_kr": "커피 리필이 무료인가요?",
+        "answer_en": "Yes, refills are free on brewed coffee.",
+        "answer_kr": "네, 드립 커피는 무료로 리필됩니다."
+    },
+    {
+        "category": "Clothing Store",
+        "situation_en": "You are at a clothing store and want to know if they offer personal shopping services.",
+        "situation_kr": "당신은 의류 매장에 있으며 개인 쇼핑 서비스를 제공하는지 알고 싶습니다.",
+        "question_en": "Do you offer personal shopping services?",
+        "question_kr": "개인 쇼핑 서비스를 제공하나요?",
+        "answer_en": "Yes, we have personal shoppers available by appointment.",
+        "answer_kr": "네, 예약을 통해 개인 쇼핑 서비스를 이용할 수 있습니다."
+    },
+    {
+        "category": "Gas Station",
+        "situation_en": "You are at a gas station and want to know if they offer premium fuel.",
+        "situation_kr": "당신은 주유소에 있으며 고급 연료를 제공하는지 알고 싶습니다.",
+        "question_en": "Do you offer premium fuel?",
+        "question_kr": "고급 연료를 제공하나요?",
+        "answer_en": "Yes, we offer regular, mid-grade, and premium fuel options.",
+        "answer_kr": "네, 일반, 중간, 고급 연료 옵션을 제공합니다."
+    },
+    {
+        "category": "Pharmacy",
+        "situation_en": "You are at a pharmacy and want to know if they sell first aid kits.",
+        "situation_kr": "당신은 약국에 있으며 구급 상자를 판매하는지 알고 싶습니다.",
+        "question_en": "Do you sell first aid kits?",
+        "question_kr": "구급 상자를 판매하나요?",
+        "answer_en": "Yes, first aid kits are available in aisle 5.",
+        "answer_kr": "네, 5번 통로에서 구급 상자를 구매할 수 있습니다."
+    },
+    {
+        "category": "Gym",
+        "situation_en": "You are at a gym and want to know if they offer guest passes.",
+        "situation_kr": "당신은 체육관에 있으며 게스트 패스를 제공하는지 알고 싶습니다.",
+        "question_en": "Do you offer guest passes?",
+        "question_kr": "게스트 패스를 제공하나요?",
+        "answer_en": "Yes, guest passes are available for $10 per day.",
+        "answer_kr": "네, 하루에 10달러로 게스트 패스를 이용할 수 있습니다."
+    },
+    {
+        "category": "Bank",
+        "situation_en": "You are at a bank and want to know if they offer credit card services.",
+        "situation_kr": "당신은 은행에 있으며 신용카드 서비스를 제공하는지 알고 싶습니다.",
+        "question_en": "Do you offer credit card services?",
+        "question_kr": "신용카드 서비스를 제공하나요?",
+        "answer_en": "Yes, we offer a variety of credit card options.",
+        "answer_kr": "네, 다양한 신용카드 옵션을 제공합니다."
+    },
+    {
+        "category": "Hardware Store",
+        "situation_en": "You are at a hardware store and want to know if they offer home delivery services.",
+        "situation_kr": "당신은 철물점에 있으며 가정 배달 서비스를 제공하는지 알고 싶습니다.",
+        "question_en": "Do you offer home delivery?",
+        "question_kr": "가정 배달 서비스를 제공하나요?",
+        "answer_en": "Yes, we offer home delivery for large items.",
+        "answer_kr": "네, 큰 물품에 대해 가정 배달 서비스를 제공합니다."
+    },
+    {
+        "category": "Tourist Information",
+        "situation_en": "You are at a tourist information center and want to know about local festivals.",
+        "situation_kr": "당신은 관광 안내소에 있으며 지역 축제에 대해 알고 싶습니다.",
+        "question_en": "Are there any local festivals happening soon?",
+        "question_kr": "곧 열리는 지역 축제가 있나요?",
+        "answer_en": "Yes, the spring festival starts next weekend.",
+        "answer_kr": "네, 봄 축제가 다음 주말에 시작됩니다."
+    },
+    {
+        "category": "Bookstore",
+        "situation_en": "You are at a bookstore and want to know if they have a loyalty program.",
+        "situation_kr": "당신은 서점에 있으며 고객 충성 프로그램이 있는지 알고 싶습니다.",
+        "question_en": "Do you have a loyalty program?",
+        "question_kr": "고객 충성 프로그램이 있나요?",
+        "answer_en": "Yes, you earn points with every purchase.",
+        "answer_kr": "네, 구매할 때마다 포인트를 적립할 수 있습니다."
+    },
+    {
+        "category": "Hotel",
+        "situation_en": "You are at a hotel and want to know if they offer wake-up call services.",
+        "situation_kr": "당신은 호텔에 있으며 모닝콜 서비스를 제공하는지 알고 싶습니다.",
+        "question_en": "Do you offer wake-up calls?",
+        "question_kr": "모닝콜 서비스를 제공하나요?",
+        "answer_en": "Yes, we can schedule a wake-up call for you.",
+        "answer_kr": "네, 모닝콜을 예약해 드릴 수 있습니다."
+    },
+    {
+        "category": "Conference",
+        "situation_en": "You are at a conference and want to know if lunch is provided.",
+        "situation_kr": "당신은 회의에 있으며 점심이 제공되는지 알고 싶습니다.",
+        "question_en": "Is lunch included with the conference?",
+        "question_kr": "회의에 점심이 포함되어 있나요?",
+        "answer_en": "Yes, lunch will be served in the banquet hall at 12:00 PM.",
+        "answer_kr": "네, 점심은 오후 12시에 연회장에서 제공됩니다."
+    },
+    {
+        "category": "Car Rental",
+        "situation_en": "You are at a car rental office and want to know if they offer unlimited mileage.",
+        "situation_kr": "당신은 렌터카 사무실에 있으며 무제한 주행거리를 제공하는지 알고 싶습니다.",
+        "question_en": "Do you offer unlimited mileage?",
+        "question_kr": "무제한 주행거리를 제공하나요?",
+        "answer_en": "Yes, unlimited mileage is available for an extra charge.",
+        "answer_kr": "네, 추가 요금으로 무제한 주행거리를 이용할 수 있습니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at an airport and want to know if they have express security lanes.",
+        "situation_kr": "당신은 공항에 있으며 신속한 보안 검색 통로가 있는지 알고 싶습니다.",
+        "question_en": "Is there an express security lane?",
+        "question_kr": "신속한 보안 검색 통로가 있나요?",
+        "answer_en": "Yes, the express lane is available for premium passengers.",
+        "answer_kr": "네, 프리미엄 승객을 위한 신속한 보안 검색 통로가 있습니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at the immigration checkpoint and want to know the required documents.",
+        "situation_kr": "당신은 출입국 심사대에 있으며 필요한 서류를 알고 싶습니다.",
+        "question_en": "What documents do I need for immigration?",
+        "question_kr": "출입국 심사에 필요한 서류는 무엇인가요?",
+        "answer_en": "You need your passport, visa, and arrival card.",
+        "answer_kr": "여권, 비자, 입국 카드를 제출하셔야 합니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at the immigration checkpoint and want to know how long the wait is.",
+        "situation_kr": "당신은 출입국 심사대에 있으며 대기 시간이 얼마나 되는지 알고 싶습니다.",
+        "question_en": "How long is the wait for immigration?",
+        "question_kr": "출입국 심사 대기 시간이 얼마나 되나요?",
+        "answer_en": "The current wait time is about 30 minutes.",
+        "answer_kr": "현재 대기 시간은 약 30분입니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are going through customs and want to know if you need to declare items.",
+        "situation_kr": "당신은 세관을 통과 중이며 물품을 신고해야 하는지 알고 싶습니다.",
+        "question_en": "Do I need to declare these items?",
+        "question_kr": "이 물품을 신고해야 하나요?",
+        "answer_en": "Yes, any items over the value of $10,000 must be declared.",
+        "answer_kr": "네, 1만 달러 이상의 물품은 신고해야 합니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at the immigration counter and want to know the visa expiration date.",
+        "situation_kr": "당신은 출입국 심사대에 있으며 비자 만료일을 알고 싶습니다.",
+        "question_en": "When does my visa expire?",
+        "question_kr": "내 비자는 언제 만료되나요?",
+        "answer_en": "Your visa expires in 6 months from the date of entry.",
+        "answer_kr": "입국일로부터 6개월 후에 비자가 만료됩니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at the immigration counter and want to know if you can extend your stay.",
+        "situation_kr": "당신은 출입국 심사대에 있으며 체류를 연장할 수 있는지 알고 싶습니다.",
+        "question_en": "Can I extend my stay?",
+        "question_kr": "체류를 연장할 수 있나요?",
+        "answer_en": "Yes, you can apply for an extension at the immigration office.",
+        "answer_kr": "네, 출입국 사무소에서 연장을 신청할 수 있습니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at the immigration counter and want to know the rules for bringing in food items.",
+        "situation_kr": "당신은 출입국 심사대에 있으며 음식 반입 규정을 알고 싶습니다.",
+        "question_en": "Can I bring food into the country?",
+        "question_kr": "음식을 반입할 수 있나요?",
+        "answer_en": "Certain foods like fresh fruits and meats are restricted.",
+        "answer_kr": "신선한 과일과 고기류는 반입이 제한됩니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at the immigration counter and need to clarify your visa type.",
+        "situation_kr": "당신은 출입국 심사대에 있으며 비자 유형을 확인하고 싶습니다.",
+        "question_en": "What type of visa do I have?",
+        "question_kr": "내 비자 유형은 무엇인가요?",
+        "answer_en": "You have a tourist visa valid for 90 days.",
+        "answer_kr": "당신은 90일간 유효한 관광 비자를 소지하고 있습니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at the customs checkpoint and want to know the limit for duty-free items.",
+        "situation_kr": "당신은 세관 심사대에 있으며 면세 물품 한도를 알고 싶습니다.",
+        "question_en": "What is the limit for duty-free items?",
+        "question_kr": "면세 물품 한도는 얼마인가요?",
+        "answer_en": "The duty-free limit is $800 per person.",
+        "answer_kr": "면세 한도는 1인당 800달러입니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are passing through immigration and need to know where to collect your luggage.",
+        "situation_kr": "당신은 출입국 심사를 통과 중이며 수하물을 어디서 찾는지 알고 싶습니다.",
+        "question_en": "Where do I collect my luggage?",
+        "question_kr": "수하물은 어디에서 찾나요?",
+        "answer_en": "You can collect your luggage at baggage claim carousel 5.",
+        "answer_kr": "수하물은 5번 수하물 찾는 곳에서 찾으실 수 있습니다."
+    },
+    {
+        "category": "Airport",
+        "situation_en": "You are at the immigration counter and want to know if you need to fill out an arrival card.",
+        "situation_kr": "당신은 출입국 심사대에 있으며 입국 카드를 작성해야 하는지 알고 싶습니다.",
+        "question_en": "Do I need to fill out an arrival card?",
+        "question_kr": "입국 카드를 작성해야 하나요?",
+        "answer_en": "Yes, you need to complete an arrival card before proceeding.",
+        "answer_kr": "네, 진행하기 전에 입국 카드를 작성해야 합니다."
+    },
+    {
+        "category": "Directions",
+        "situation_en": "Someone asks for directions to the nearest coffee shop.",
+        "situation_kr": "당신은 가장 가까운 커피숍으로 가는 길을 묻고 있습니다.",
+        "question_en": "Where is the nearest coffee shop?",
+        "question_kr": "가장 가까운 커피숍은 어디에 있나요?",
+        "answer_en": "It's two blocks ahead on the left.",
+        "answer_kr": "두 블록 앞으로 가서 왼쪽에 있습니다."
+    },
+    {
+        "category": "Directions",
+        "situation_en": "You are asked for directions to the nearest hospital.",
+        "situation_kr": "당신은 가장 가까운 병원으로 가는 길을 묻고 있습니다.",
+        "question_en": "Can you tell me how to get to the hospital?",
+        "question_kr": "병원으로 가는 길을 알려주시겠어요?",
+        "answer_en": "Turn right at the traffic light and go straight for three blocks.",
+        "answer_kr": "신호등에서 우회전하고 세 블록 직진하세요."
+    },
+    {
+        "category": "Directions",
+        "situation_en": "You are asked for directions to a nearby gas station.",
+        "situation_kr": "당신은 가까운 주유소로 가는 길을 묻고 있습니다.",
+        "question_en": "How do I get to the nearest gas station?",
+        "question_kr": "가장 가까운 주유소는 어디에 있나요?",
+        "answer_en": "Go straight for two blocks, it's on your right.",
+        "answer_kr": "두 블록 직진하면 오른쪽에 있습니다."
+    },
+    {
+        "category": "Directions",
+        "situation_en": "Someone asks for directions to the city center.",
+        "situation_kr": "누군가 시내로 가는 길을 묻고 있습니다.",
+        "question_en": "How do I get to the city center?",
+        "question_kr": "시내로 어떻게 가나요?",
+        "answer_en": "Take the bus number 5 from the next stop, it will take you directly to the center.",
+        "answer_kr": "다음 정류장에서 5번 버스를 타면 시내로 바로 갑니다."
+    },
+    {
+        "category": "Directions",
+        "situation_en": "Someone asks for directions to the nearest pharmacy.",
+        "situation_kr": "누군가 가장 가까운 약국으로 가는 길을 묻고 있습니다.",
+        "question_en": "Can you tell me where the nearest pharmacy is?",
+        "question_kr": "가장 가까운 약국이 어디에 있는지 알려주시겠어요?",
+        "answer_en": "It's just across the street, next to the bakery.",
+        "answer_kr": "바로 길 건너편에, 제과점 옆에 있습니다."
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You are meeting someone for the first time and want to introduce yourself.",
+        "situation_kr": "당신은 누군가를 처음 만나고 있으며 자기소개를 하고 싶습니다.",
+        "question_en": "Hello, my name is [Your Name]. Nice to meet you.",
+        "question_kr": "안녕하세요, 제 이름은 [당신의 이름]입니다. 만나서 반갑습니다.",
+        "answer_en": "Nice to meet you too. My name is [Their Name].",
+        "answer_kr": "저도 만나서 반가워요. 제 이름은 [그 사람의 이름]입니다."
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You are introducing a friend to someone else.",
+        "situation_kr": "당신은 친구를 다른 사람에게 소개하고 있습니다.",
+        "question_en": "This is my friend [Friend's Name].",
+        "question_kr": "이 사람은 제 친구 [친구의 이름]입니다.",
+        "answer_en": "Nice to meet you, [Friend's Name].",
+        "answer_kr": "반가워요, [친구의 이름]."
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You want to ask for someone's name during an introduction.",
+        "situation_kr": "당신은 소개할 때 상대방의 이름을 묻고 싶습니다.",
+        "question_en": "What’s your name?",
+        "question_kr": "이름이 뭐예요?",
+        "answer_en": "My name is [Their Name].",
+        "answer_kr": "제 이름은 [그 사람의 이름]입니다."
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You are being introduced to someone and want to express your pleasure in meeting them.",
+        "situation_kr": "당신은 누군가를 소개받고 있으며 그 사람을 만나서 반가움을 표현하고 싶습니다.",
+        "question_en": "It's a pleasure to meet you.",
+        "question_kr": "만나서 반갑습니다.",
+        "answer_en": "The pleasure is mine.",
+        "answer_kr": "저도 만나서 반갑습니다."
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You are introducing yourself in a professional setting.",
+        "situation_kr": "당신은 직장에서 자기소개를 하고 있습니다.",
+        "question_en": "Hello, I’m [Your Name] from [Company Name].",
+        "question_kr": "안녕하세요, 저는 [회사 이름]의 [당신의 이름]입니다.",
+        "answer_en": "Nice to meet you, I’m [Their Name] from [Their Company].",
+        "answer_kr": "반가워요, 저는 [그 사람의 이름]이고 [그들의 회사]에서 왔습니다."
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You want to know where someone is from during an introduction.",
+        "situation_kr": "당신은 소개할 때 상대방이 어디에서 왔는지 알고 싶습니다.",
+        "question_en": "Where are you from?",
+        "question_kr": "어디에서 오셨어요?",
+        "answer_en": "I’m from [City/Country Name].",
+        "answer_kr": "저는 [도시/국가 이름]에서 왔어요."
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You are introducing yourself in a formal setting and want to give your full name.",
+        "situation_kr": "당신은 격식을 갖춘 자리에서 성명까지 포함한 자기소개를 하고 싶습니다.",
+        "question_en": "Good afternoon, my full name is [Your Full Name].",
+        "question_kr": "안녕하세요, 제 이름은 [당신의 성명]입니다.",
+        "answer_en": "It’s a pleasure to meet you, [Your Full Name].",
+        "answer_kr": "[당신의 성명]씨, 만나서 반가워요."
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You are being introduced to a group and want to greet everyone.",
+        "situation_kr": "당신은 여러 사람에게 소개되고 있으며 모두에게 인사하고 싶습니다.",
+        "question_en": "Hi everyone, I’m [Your Name].",
+        "question_kr": "안녕하세요 여러분, 저는 [당신의 이름]입니다.",
+        "answer_en": "Hello, [Your Name]. Nice to meet you.",
+        "answer_kr": "안녕하세요, [당신의 이름]. 반갑습니다."
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You want to clarify how to pronounce your name when meeting someone new.",
+        "situation_kr": "당신은 처음 만난 사람에게 자신의 이름 발음 방법을 설명하고 싶습니다.",
+        "question_en": "You can pronounce my name as [Pronunciation Guide].",
+        "question_kr": "제 이름은 [발음 방법]으로 발음하시면 됩니다.",
+        "answer_en": "Thanks, I got it!",
+        "answer_kr": "감사합니다, 이해했어요!"
+    },
+    {
+        "category": "Introduction",
+        "situation_en": "You want to ask someone for their profession during an introduction.",
+        "situation_kr": "당신은 소개할 때 상대방의 직업을 묻고 싶습니다.",
+        "question_en": "What do you do for work?",
+        "question_kr": "무슨 일을 하세요?",
+        "answer_en": "I work as a [Profession].",
+        "answer_kr": "저는 [직업]으로 일하고 있어요."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking a professor about the course syllabus.",
+        "situation_kr": "당신은 교수님께 강의 계획서를 묻고 있습니다.",
+        "question_en": "Could you please provide me with the course syllabus?",
+        "question_kr": "강의 계획서를 주실 수 있나요?",
+        "answer_en": "Sure, I will send it to you via email.",
+        "answer_kr": "물론이죠, 이메일로 보내드릴게요."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking a classmate about the upcoming exam schedule.",
+        "situation_kr": "당신은 동급생에게 다가오는 시험 일정을 묻고 있습니다.",
+        "question_en": "When is the next exam?",
+        "question_kr": "다음 시험은 언제인가요?",
+        "answer_en": "The exam is next Thursday at 10 AM.",
+        "answer_kr": "시험은 다음 주 목요일 오전 10시에 있습니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about how your grade will be calculated.",
+        "situation_kr": "당신은 성적이 어떻게 산출되는지 묻고 있습니다.",
+        "question_en": "How will my grade be calculated?",
+        "question_kr": "제 성적은 어떻게 산출되나요?",
+        "answer_en": "Your grade is based on exams, assignments, and class participation.",
+        "answer_kr": "성적은 시험, 과제, 그리고 수업 참여도를 기준으로 산출됩니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are inquiring about a group project in your course.",
+        "situation_kr": "당신은 수업 중 그룹 프로젝트에 대해 묻고 있습니다.",
+        "question_en": "Is there a group project for this course?",
+        "question_kr": "이 수업에 그룹 프로젝트가 있나요?",
+        "answer_en": "Yes, the group project is worth 30% of your grade.",
+        "answer_kr": "네, 그룹 프로젝트는 성적의 30%를 차지합니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about the deadline for an assignment.",
+        "situation_kr": "당신은 과제 제출 기한에 대해 묻고 있습니다.",
+        "question_en": "When is the deadline for the assignment?",
+        "question_kr": "과제 제출 마감일은 언제인가요?",
+        "answer_en": "The deadline is next Monday by midnight.",
+        "answer_kr": "마감일은 다음 주 월요일 자정까지입니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking a club president how to join their student club.",
+        "situation_kr": "당신은 동아리 회장에게 동아리 가입 방법을 묻고 있습니다.",
+        "question_en": "How can I join this student club?",
+        "question_kr": "이 동아리에 어떻게 가입할 수 있나요?",
+        "answer_en": "You can sign up at our booth during the club fair.",
+        "answer_kr": "동아리 박람회에서 부스에 와서 가입할 수 있습니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about the requirements to graduate.",
+        "situation_kr": "당신은 졸업 요건에 대해 묻고 있습니다.",
+        "question_en": "What are the requirements to graduate?",
+        "question_kr": "졸업 요건은 무엇인가요?",
+        "answer_en": "You need to complete 120 credits and pass all required courses.",
+        "answer_kr": "120학점을 이수하고 필수 과목을 모두 통과해야 합니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking your professor about office hours for extra help.",
+        "situation_kr": "당신은 교수님께 추가 도움을 받기 위한 면담 시간을 묻고 있습니다.",
+        "question_en": "When are your office hours?",
+        "question_kr": "면담 시간은 언제인가요?",
+        "answer_en": "My office hours are on Wednesdays from 2 to 4 PM.",
+        "answer_kr": "면담 시간은 매주 수요일 오후 2시부터 4시까지입니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about registering for courses next semester.",
+        "situation_kr": "당신은 다음 학기 수강 신청에 대해 묻고 있습니다.",
+        "question_en": "When can I register for next semester’s courses?",
+        "question_kr": "다음 학기 수강 신청은 언제 할 수 있나요?",
+        "answer_en": "Course registration opens in two weeks.",
+        "answer_kr": "수강 신청은 2주 후에 시작됩니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking a friend for study tips before a major exam.",
+        "situation_kr": "당신은 중요한 시험을 앞두고 친구에게 공부 팁을 묻고 있습니다.",
+        "question_en": "Do you have any study tips for the exam?",
+        "question_kr": "시험을 위한 공부 팁이 있나요?",
+        "answer_en": "I recommend reviewing the lecture notes and practicing past exams.",
+        "answer_kr": "강의 노트를 복습하고 기출문제를 풀어보는 것을 추천해요."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about how to calculate your GPA.",
+        "situation_kr": "당신은 GPA를 어떻게 계산하는지 묻고 있습니다.",
+        "question_en": "How do I calculate my GPA?",
+        "question_kr": "GPA는 어떻게 계산하나요?",
+        "answer_en": "You calculate your GPA by dividing the total grade points by the number of credits.",
+        "answer_kr": "총 성적 점수를 학점 수로 나누면 됩니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking a professor about the grading curve for the class.",
+        "situation_kr": "당신은 수업의 성적 분포에 대해 교수님께 묻고 있습니다.",
+        "question_en": "Will there be a grading curve for this class?",
+        "question_kr": "이 수업에 성적 분포가 적용되나요?",
+        "answer_en": "Yes, grades will be curved based on overall class performance.",
+        "answer_kr": "네, 성적은 전체 학급 성과를 기준으로 조정됩니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about internship opportunities through your department.",
+        "situation_kr": "당신은 학과를 통해 인턴십 기회에 대해 묻고 있습니다.",
+        "question_en": "Are there any internship opportunities available through the department?",
+        "question_kr": "학과에서 제공하는 인턴십 기회가 있나요?",
+        "answer_en": "Yes, we have several partnerships with local companies.",
+        "answer_kr": "네, 저희는 여러 현지 기업들과 협력 관계를 맺고 있습니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about the club’s upcoming events.",
+        "situation_kr": "당신은 동아리의 다가오는 행사에 대해 묻고 있습니다.",
+        "question_en": "What events does the club have coming up?",
+        "question_kr": "동아리에서 다가오는 행사가 무엇인가요?",
+        "answer_en": "We have a charity fundraiser and a sports tournament next month.",
+        "answer_kr": "다음 달에 자선 기금 모금 행사와 스포츠 토너먼트가 있습니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking for advice on choosing elective courses.",
+        "situation_kr": "당신은 선택 과목을 선택하는 것에 대해 조언을 구하고 있습니다.",
+        "question_en": "Do you have any advice on choosing electives?",
+        "question_kr": "선택 과목을 선택하는 데 조언을 해주실 수 있나요?",
+        "answer_en": "I recommend choosing courses that complement your major.",
+        "answer_kr": "전공과 관련 있는 과목을 선택하는 것이 좋습니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about the availability of tutoring services on campus.",
+        "situation_kr": "당신은 캠퍼스 내 과외 서비스 제공 여부를 묻고 있습니다.",
+        "question_en": "Are there any tutoring services available on campus?",
+        "question_kr": "캠퍼스에서 과외 서비스를 제공하나요?",
+        "answer_en": "Yes, tutoring is available in the learning center.",
+        "answer_kr": "네, 학습 센터에서 과외 서비스를 받을 수 있습니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about how to apply for scholarships.",
+        "situation_kr": "당신은 장학금 신청 방법에 대해 묻고 있습니다.",
+        "question_en": "How do I apply for scholarships?",
+        "question_kr": "장학금은 어떻게 신청하나요?",
+        "answer_en": "You can apply through the financial aid office or online.",
+        "answer_kr": "재정 지원 사무소나 온라인으로 신청할 수 있습니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about how to sign up for intramural sports.",
+        "situation_kr": "당신은 교내 스포츠 대회 참가 방법을 묻고 있습니다.",
+        "question_en": "How can I sign up for intramural sports?",
+        "question_kr": "교내 스포츠 대회에 어떻게 참가할 수 있나요?",
+        "answer_en": "You can sign up on the university’s sports website.",
+        "answer_kr": "대학교 스포츠 웹사이트에서 신청할 수 있습니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking a professor if extra credit is available in the course.",
+        "situation_kr": "당신은 수업에서 추가 학점을 받을 수 있는지 교수님께 묻고 있습니다.",
+        "question_en": "Is extra credit available in this course?",
+        "question_kr": "이 수업에서 추가 학점을 받을 수 있나요?",
+        "answer_en": "Yes, you can earn extra credit by completing an additional project.",
+        "answer_kr": "네, 추가 프로젝트를 완료하면 추가 학점을 받을 수 있습니다."
+    },
+    {
+        "category": "College",
+        "situation_en": "You are asking about attending office hours for academic advising.",
+        "situation_kr": "당신은 학업 상담을 위한 면담 시간에 대해 묻고 있습니다.",
+        "question_en": "Can I attend your office hours for academic advising?",
+        "question_kr": "학업 상담을 위해 면담 시간에 참석할 수 있나요?",
+        "answer_en": "Yes, feel free to stop by during my office hours next week.",
+        "answer_kr": "네, 다음 주 면담 시간에 오시면 됩니다."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking your instructor how to improve your balance in a specific pose.",
+        "situation_kr": "당신은 특정 자세에서 균형을 개선하는 방법을 강사에게 묻고 있습니다.",
+        "question_en": "How can I improve my balance in this pose?",
+        "question_kr": "이 자세에서 균형을 어떻게 개선할 수 있나요?",
+        "answer_en": "Focus on engaging your core and keep your gaze steady on one point.",
+        "answer_kr": "코어를 단단히 잡고 하나의 점에 시선을 고정하세요."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking for tips on increasing flexibility in your hamstrings.",
+        "situation_kr": "당신은 햄스트링 유연성을 증가시키는 팁을 묻고 있습니다.",
+        "question_en": "How can I increase my hamstring flexibility?",
+        "question_kr": "햄스트링 유연성을 어떻게 늘릴 수 있나요?",
+        "answer_en": "Practice forward bends daily, but don’t force the stretch too much.",
+        "answer_kr": "매일 전굴을 연습하되, 무리해서 스트레칭하지 마세요."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking for advice on improving your breathing during movement.",
+        "situation_kr": "당신은 동작 중 호흡을 개선하는 방법에 대해 조언을 구하고 있습니다.",
+        "question_en": "How can I improve my breathing during movement?",
+        "question_kr": "동작 중 호흡을 어떻게 개선할 수 있나요?",
+        "answer_en": "Try to synchronize your breath with your movements, inhaling during expansion and exhaling during contraction.",
+        "answer_kr": "동작과 호흡을 동기화하고, 확장할 때 들이쉬고 수축할 때 내쉬세요."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking how to build strength for holding poses longer.",
+        "situation_kr": "당신은 자세를 오래 유지하기 위해 힘을 기르는 방법을 묻고 있습니다.",
+        "question_en": "How can I build strength to hold poses longer?",
+        "question_kr": "자세를 더 오래 유지하기 위해 어떻게 힘을 기를 수 있나요?",
+        "answer_en": "Focus on engaging the muscles and holding poses for a few extra breaths each time.",
+        "answer_kr": "근육을 사용하여 자세를 유지하고 매번 몇 번 더 호흡하세요."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking how to improve your alignment in yoga poses.",
+        "situation_kr": "당신은 요가 자세에서 정렬을 개선하는 방법을 묻고 있습니다.",
+        "question_en": "How can I improve my alignment in this pose?",
+        "question_kr": "이 자세에서 정렬을 어떻게 개선할 수 있나요?",
+        "answer_en": "Pay attention to the position of your hips and shoulders, and use a mirror to check your form.",
+        "answer_kr": "엉덩이와 어깨의 위치에 신경 쓰고, 거울을 사용하여 자세를 확인하세요."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking how to prevent injury during stretching.",
+        "situation_kr": "당신은 스트레칭 중 부상을 예방하는 방법을 묻고 있습니다.",
+        "question_en": "How can I prevent injury while stretching?",
+        "question_kr": "스트레칭 중 부상을 어떻게 예방할 수 있나요?",
+        "answer_en": "Always warm up before stretching and avoid bouncing or pushing beyond your limit.",
+        "answer_kr": "스트레칭 전에 반드시 워밍업을 하고, 반동을 주거나 한계를 넘지 않도록 하세요."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking how to transition smoothly between poses.",
+        "situation_kr": "당신은 자세 사이를 부드럽게 전환하는 방법을 묻고 있습니다.",
+        "question_en": "How can I transition more smoothly between poses?",
+        "question_kr": "자세 사이를 더 부드럽게 전환하려면 어떻게 해야 하나요?",
+        "answer_en": "Focus on your breath and move with control, keeping movements slow and deliberate.",
+        "answer_kr": "호흡에 집중하고 천천히, 의도적으로 동작을 이어가세요."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking for guidance on how to deepen a pose.",
+        "situation_kr": "당신은 자세를 더 깊게 만드는 방법에 대해 조언을 구하고 있습니다.",
+        "question_en": "How can I deepen this pose?",
+        "question_kr": "이 자세를 더 깊게 하려면 어떻게 해야 하나요?",
+        "answer_en": "Relax into the stretch with each exhale, and gradually increase the depth over time.",
+        "answer_kr": "숨을 내쉴 때마다 이완하고, 점차적으로 깊이를 더해보세요."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking how to improve strength and stability in your core.",
+        "situation_kr": "당신은 코어의 힘과 안정성을 개선하는 방법을 묻고 있습니다.",
+        "question_en": "How can I strengthen my core for better stability?",
+        "question_kr": "더 나은 안정성을 위해 코어를 어떻게 강화할 수 있나요?",
+        "answer_en": "Incorporate planks and other core exercises into your routine regularly.",
+        "answer_kr": "플랭크 등 코어 운동을 정기적으로 루틴에 추가하세요."
+    },
+    {
+        "category": "Fitness",
+        "situation_en": "You are asking how to recover after an intense workout or practice.",
+        "situation_kr": "당신은 강도 높은 운동 후 회복 방법에 대해 묻고 있습니다.",
+        "question_en": "What’s the best way to recover after a workout?",
+        "question_kr": "운동 후 회복을 위한 가장 좋은 방법은 무엇인가요?",
+        "answer_en": "Focus on hydration, gentle stretching, and resting your muscles.",
+        "answer_kr": "수분을 보충하고, 부드럽게 스트레칭하며 근육을 쉬게 해주세요."
+    }
+]
