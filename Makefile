@@ -20,8 +20,12 @@ db:  ## Setup database
 	python db.py
 
 .PHONY: start
-start:  ## Start docker services (detached mode)
-	docker compose -f $(DOCKER_COMPOSE_FILE) up -d
+start:  ## Start docker services (detached mode) and run the app
+	docker compose -f $(DOCKER_COMPOSE_FILE) up -d && streamlit run app.py
+
+.PHONY: tracing
+start: ## Start LangMate - RAG tracing
+    streamlit run langmate.py
 
 .PHONY: stop
 stop:  ## Stop docker services
