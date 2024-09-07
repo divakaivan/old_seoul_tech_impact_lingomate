@@ -1,3 +1,7 @@
+networks:
+  bridge:
+    driver: bridge
+
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3
@@ -9,5 +13,38 @@ services:
       - "9200:9200"
       - "9300:9300"
 
+  postgres:
+    image: postgres:14
+    container_name: postgres
+    environment:
+      POSTGRES_DB: database
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      bridge:
+        aliases:
+          - postgres
+
+  grafana:
+    image: grafana/grafana:latest
+    environment: 
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_FEATURE_TOGGLES_ENABLE=ngalert
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+    ports:
+      - 3000:3000
+    networks:
+      bridge:
+        aliases:
+          - grafana
+
 volumes:
-  ollama:
+  postgres_data:
+  grafana:
