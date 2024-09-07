@@ -59,15 +59,12 @@ def ask_LLM():
                 parsed_data = wrap_to_json(answer)
                 print("parsed_data", parsed_data)
 
-                #data = json.loads(str(answer))
-                # 필드 추출 및 f-string을 사용한 문자열 출력
                 question_english = parsed_data["Question English"]
                 situation_english = parsed_data["Situation English"]
                 situation_korean = parsed_data["Situation Korean"]
                 answer_english = parsed_data["Answer English"]
                 answer_korean = parsed_data["Answer Korean"]
 
-                # f-string을 사용하여 출력
                 formatted_output = f"""
                 Question English: {question_english}\n
                 Situation English: {situation_english}\n
@@ -75,7 +72,6 @@ def ask_LLM():
                 Answer English: {answer_english}\n
                 Answer Korean: {answer_korean}\n"""
 
-                # 출력 
                 print("formatted", formatted_output)     
 
                 st.success("Query Completed!")
@@ -94,8 +90,26 @@ def suggest_categories():
         st.write("You selected:", selected_category) 
         with st.spinner("Searching..."):
             answer = rag(selected_category, "category").replace("###", "").strip()
+            parsed_data = wrap_to_json(answer)
+            print("parsed_data", parsed_data)
+
+            question_english = parsed_data["Question English"]
+            situation_english = parsed_data["Situation English"]
+            situation_korean = parsed_data["Situation Korean"]
+            answer_english = parsed_data["Answer English"]
+            answer_korean = parsed_data["Answer Korean"]
+
+            formatted_output = f"""
+            Question English: {question_english}\n
+            Situation English: {situation_english}\n
+            Situation Korean: {situation_korean}\n
+            Answer English: {answer_english}\n
+            Answer Korean: {answer_korean}\n"""
+
+            print("formatted", formatted_output)     
+
             st.success("Query Completed!")
-            st.markdown(answer, unsafe_allow_html=True)
+            st.markdown(formatted_output)
     else: 
         st.warning("Please select a category.")
 

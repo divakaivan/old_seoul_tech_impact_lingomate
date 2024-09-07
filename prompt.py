@@ -96,22 +96,19 @@ Follow the below examples.font_size should be **12px**
 ### 
 Example 1
 ```
-{{
   "Question English":  "Where is the nearest subway station?",
   "Situation English": "Someone asks for directions to the nearest subway station.",
   "Situation Korean": 당신은 가장 가까운 지하철역으로 가는 길을 묻고 있습니다.",
   "Answer English": "Go straight for two blocks, then turn right.",
   "Answer Korean": "두 블록 앞으로 가서 오른쪽으로 가세요."
-}}
 ```
 Example 2
 ```
-{{"Question English":  "Where is the nearest subway station?",
+"Question English":  "Where is the nearest subway station?",
   "Situation English": "You are at a restaurant and want to know if they offer outdoor seating.",
   "Situation Korean": "당신은 식당에 있으며 야외 좌석이 있는지 알고 싶습니다.",
   "Answer English": "Yes, we have a patio for outdoor dining.",
   "Answer Korean": "야외에서 식사할 수 있는 테라스가 있습니다."
-}}
 ```
 ### Instructions:
 
