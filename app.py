@@ -2,136 +2,19 @@ import streamlit as st
 from elasticsearch import Elasticsearch
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_ollama.llms import OllamaLLM
+from prompt import build_prompt, recommend_prompt
+from data_helper import search 
 import json
-
-# Initialize Elasticsearch
-es_client = Elasticsearch('http://localhost:9200')
-
-# Define the Elasticsearch index and its settings
-index_name = "learning-english"
 
 # Streamlit title and introduction
 st.title("Language Learning Query System")
 st.write("Enter your query below, and the system will search for relevant results in English and Korean, then generate a response.")
 
-# Function to search Elasticsearch
-def elastic_search(query):
-    search_query = {
-        "size": 1,
-        "query": {
-            "bool": {
-                "must": {
-                    "multi_match": {
-                        "query": query,
-                        "fields": ['category^8', 'situation_en', 'situation_kr', 'question_en', 'answer_en', 'question_kr', 'answer_kr'],
-                        "type": "best_fields"
-                    }
-                }
-            }
-}
-    }
-
-    response = es_client.search(index=index_name, body=search_query)
-
-    result_docs = []
-    for hit in response['hits']['hits']:
-        result_docs.append(hit['_source'])
-    
-    return result_docs
-
-# Function to build a prompt for the LLM
-def build_prompt(query, search_results):
-    prompt_template = """
-You are an English teacher who is helping students learn English expressions for different real-life situations. 
-Based on the provided CONTEXT provide an appropriate response in English and Korean to the user's QUESTION.
-Use only the facts from the CONTEXT to answer the QUESTION. Do not add any additional information.
-
-Please **strictly follow the format below**. Do not add any additional information or change the structure. **Use only the facts from the provided CONTEXT.** Your response must be in markdown format, with all sentences separated by a newline.
-Format should be followed. 
-### Format:
-
-Question Korean: [The provided question]\n
-Question English: [Your Question in English]\n
-Situation Korean: [The Situation in Korean]\n
-Situation English: [The Situation in English]\n
-Answer Korean: [Your Answer in Korean]\n
-Answer English: [Your Answer in English]\n
-
-### Example:
-
-Question Korean: 가까운 지하철역 가는 법 알려주세요.\n
-Question English: Where is the nearest subway station? \n
-Situation Korean: 당신은 가장 가까운 지하철역으로 가는 길을 묻고 있습니다.\n
-Situation English: Someone asks for directions to the nearest subway station.\n
-Answer Korean: 두 블록 앞으로 가서 오른쪽으로 가세요.\n
-Answer English: Go straight for two blocks, then turn right.\n
-
-QUESTION: {question}
-
-CONTEXT: 
-{context}
-""".strip()
-
-    context = ""
-    for doc in search_results:
-        context += f"Category: {doc['category']}\nSituation English: {doc['situation_en']}\nSituation Korean: {doc['situation_kr']}\nQuestion English: {doc['question_en']}\nAnswer English: {doc['answer_en']}\nAnswer Korean: {doc['answer_kr']}\n\n"
-
-    prompt = prompt_template.format(question=query, context=context)
-    return prompt
-
-def recommend_prompt(category, search_results):
-    print("here's recommend_prompt")
-    prompt_template = """
- 
-You are an English teacher helping students learn English expressions for real-life situations. 
-You are tasked with providing **only one set** of expressions related to the provided category.
-
-Please **strictly follow the format below**. Do not add any additional information or change the structure. **Use only the facts from the provided CONTEXT.** Your response must be in markdown format, with all sentences separated by a newline.
-Format should be followed and font_size should be **12px**
-
-### Format:
-
-Question Korean: [The provided question]\n
-Question English: [Your Question in English]\n
-Situation Korean: [The Situation in Korean]\n
-Situation English: [The Situation in English]\n
-Answer Korean: [Your Answer in Korean]\n
-Answer English: [Your Answer in English]\n
-
-### Example:
-
-Question Korean: 가까운 지하철역 가는 법 알려주세요.\n
-Question English: Where is the nearest subway station? \n
-Situation Korean: 당신은 가장 가까운 지하철역으로 가는 길을 묻고 있습니다.\n
-Situation English: Someone asks for directions to the nearest subway station.\n
-Answer Korean: 두 블록 앞으로 가서 오른쪽으로 가세요.\n
-Answer English: Go straight for two blocks, then turn right.\n
-
-### Instructions:
-
-- Ensure that the **category** and **context** are taken into account.
-- Provide **only one set** of expressions related to the provided category.
-- **Follow the exact format**. Do not change the order or structure.
-- **Do not generate extra information** beyond what is given in the context.
-
-CATEGORY: {category}
-
-CONTEXT: {context}
-""".strip()
-    context = ""
-    for doc in search_results:
-        context += f"Category: {doc['category']}\nSituation English: {doc['situation_en']}\nSituation Korean: {doc['situation_kr']}\nQuestion English: {doc['question_en']}\nAnswer English: {doc['answer_en']}\nAnswer Korean: {doc['answer_kr']}\n\n"
-
-    prompt = prompt_template.format(category=category, context=context)
-    print("-------" )
-    print("prompt", prompt)
-    print("-------" )
-    return prompt
 
 # Function to run RAG pipeline
 def rag(query, type):
     print("query", query)
-    search_results = elastic_search(query)
+    search_results = search(query)
     if type == "question":
         prompt = build_prompt(query, search_results)
     if type == "category": 
@@ -141,13 +24,26 @@ def rag(query, type):
     # prompt_template = ChatPromptTemplate.from_template(prompt)
     model = OllamaLLM(model="llama3.1")
     answer = model.invoke(prompt)
+    print("final_answer", answer)
     return answer
 
 
 entry_options = ["please select an option", "pick a category you are interested in", "Any question in your mind?"]
 selected_option = st.selectbox("please select an option", entry_options)
 
+def wrap_to_json(answer_text): 
+    print("answer_text", answer_text)
+    lines = answer_text.replace("###", "").strip()
+    print(lines)
+    return lines
+    # json_data = {}
 
+    # for line in lines: 
+    #     key, value = line.split(":", 1)
+    #     json_data[key.strip()] = value.strip()
+    # return json.dumps(json_data, indent=4)
+
+    #convert the dictionary to json_String 
 def ask_LLM(): 
     st.subheader("Ask LingoMate")
     user_query = st.text_input("Enter your question:")
@@ -155,8 +51,30 @@ def ask_LLM():
         if user_query:
             with st.spinner("Searching..."):
                 answer = rag(user_query, "question")
+                print("ollama answer: ", answer)    
+                json_output = wrap_to_json(answer)
+                print("json_output", json_output)
+                data = json.loads(str(answer))
+                # 필드 추출 및 f-string을 사용한 문자열 출력
+                question_english = data["Question English"]
+                situation_english = data["Situation English"]
+                situation_korean = data["Situation Korean"]
+                answer_english = data["Answer English"]
+                answer_korean = data["Answer Korean"]
+
+                # f-string을 사용하여 출력
+                formatted_output = f"""
+                Question English: {question_english}
+                Situation English: {situation_english}
+                Situation Korean: {situation_korean}
+                Answer English: {answer_english}
+                Answer Korean: {answer_korean}"""
+
+                # 출력 
+                print(formatted_output)     
+
                 st.success("Query Completed!")
-                st.write("Answer:", answer)
+                st.markdown(answer)
         else:
             st.warning("Please enter a query.")
 
