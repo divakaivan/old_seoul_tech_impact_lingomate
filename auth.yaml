@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    jieun:
+      email: jieun@seoultechimpact.com
+      name: Jieun Kim
+      password: $2b$12$jLQ18dKGzACSAlguN.RZTOTOrVnhFdWE2ByJhcWmzLBDgSwUiQjL6 # pwd: abc
+    ivan:
+      email: ivan@seoultechimpact.com
+      name: Ivan Ivanov
+      password: $2b$12$tUMs0c7YmrOJIwKZUjq.x.ByRBnbIJHOFNEy.j3Y3wuXpIL8ugRL6 # pwd: def 
+cookie:
+  expiry_days: 30
+  key: jiodskopdikwkldnasnkldxmaskldoijemfseifjuosef 
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - test@seoultechimpact.com
